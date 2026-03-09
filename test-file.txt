@@ -1,0 +1,2 @@
+Hello AWS! This is my first uploaded file using Python.
+My DevOps journey - Day 3
