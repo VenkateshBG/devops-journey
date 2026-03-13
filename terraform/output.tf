@@ -1,14 +1,24 @@
-output "bucket_name" {
-  description = "Name of the created S3 bucket"
-  value       = aws_s3_bucket.my_first_bucket.bucket
+output "vpc_id" {
+  description = "ID of the VPC"
+  value       = aws_vpc.main.id
 }
 
-output "bucket_arn" {
-  description = "ARN of the created S3 bucket"
-  value       = aws_s3_bucket.my_first_bucket.arn
+output "subnet_id" {
+  description = "ID of the subnet"
+  value       = aws_subnet.main.id
 }
 
-output "bucket_region" {
-  description = "Region where bucket is created"
-  value       = aws_s3_bucket.my_first_bucket.bucket_region
+output "security_group_id" {
+  description = "ID of the security group"
+  value       = aws_security_group.main.id
+}
+
+output "ec2_instance_id" {
+  description = "ID of the EC2 instance"
+  value       = aws_instance.main.id
+}
+
+output "ec2_public_ip" {
+  description = "Public IP of EC2 instance"
+  value       = aws_instance.main.public_ip
 }
