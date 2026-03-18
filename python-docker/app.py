@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return f"""
-    <h1>🐍 Python + Docker is Working!</h1>
+    <h1>🐍 Pipeline is Working!</h1>
     <p>Current time: {datetime.datetime.now()}</p>
     <p>Python version: {platform.python_version()}</p>
     <p>Running on: {platform.system()} {platform.release()}</p>
