@@ -9,7 +9,7 @@ cache = redis.Redis(host='redis', port=6379)
 def home():
     visits = cache.incr('visits')
     return f"""
-    <h1>🐍 Docker Compose is Working!</h1>
+    <h1>🐍 Pipeline is Working!</h1>
     <p>Total visits: {visits}</p>
     <p>Current time: {datetime.datetime.now()}</p>
     """
